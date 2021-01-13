@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <style>
+            .formettino{
+                margin-top: 15px;
+                min-width: 400px;
+                background-image: url(rainbow.jpg);
+                background-size: 100%;
+                border-radius: 3px;
+                border-color: whitesmoke;
+                border-width: 3px;
+                border-style: solid;
+                text-align: center;
+                width: 30%;
+                height: 30%;
+            }
+            text{
+                color: black;
+                font-size: 15;
+            }
+            body{
+                background-color: black;
+
+            }
+            .nomestud{
+                border-color: rgb(121, 0, 0);
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 10px;
+            }
+            .tabnom{
+                margin-top: 5px;
+                width:90%;
+            }
+            table{
+                margin-left: 10%;
+            }
+            .bottoncino{
+                background-color: black;
+                border-radius: 3px;
+                border-color: whitesmoke;
+                color:white;
+                border-width: 3px;
+                border-style: solid;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+    <center>
+        <form class="formettino">
+
+        <table class="tabnom">
+
+        <tr>
+            <td><text>Nominativo: </text></td>
+            <td colspan="4"><input class="nomestud"></input></td>
+        </tr>
+<!--__Spazi di divisione_____________________________________________________________________________-->
+        <tr>
+            <td>&nbsp</td>
+            <td colspan="4">&nbsp</td>
+        </tr> 
+<!--__Scelta di genere_______________________________________________________________________________-->        
+        <tr>
+
+            <td><text>Genere:  &nbsp&nbsp&nbsp&nbsp     </text></td>
+            <td colspan="4"><input type="radio" name="gender" value="male" aria-valuetext="M" >M</input></td>
+        </tr>         
+        <tr>
+            <td>&nbsp</td>
+            <td colspan="4"><input type="radio" name="gender" value="female">F</input></td>
+        </tr>
+<!--__Spazi di divisione_____________________________________________________________________________-->
+        <tr>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+        </tr> 
+<!--__Scelta di debiti_______________________________________________________________________________-->
+        <tr>
+            <td><text>Debiti: </text></td>
+            <td><input type="checkbox" name="debiti" value="ita"><text>&nbspITA</text></td>
+            <td><input type="checkbox" name="debiti" value="mat"><text>&nbspMAT</text></td>
+            <td><input type="checkbox" name="debiti" value="tel"><text>&nbspTEL</text></td>
+            <td><input type="checkbox" name="debiti" value="inf"><text>&nbspINF</text></td>
+        </tr>
+
+        </table>
+        <br><br>
+        <div>
+            <button class="bottoncino" type="submit">Esito scrutinio</button>
+        </div>        
+
+        </form>
+    </center>
+
+    </body>
+
+</html>
